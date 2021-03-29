@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav, footer {
+  background-color: darkgrey;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.brand-name {
+  text-decoration: none;
+}
+
+main {
+  justify-content: center;
+}
+
+h1, .card-title, footer {
+  text-align: center;
+}
+
+.deck {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+  padding: 7px;
+  background-color:slategrey;
+  border-radius: 5px;
+  width: 16rem;
+  height: 16rem;
+}
+
+.card-title {
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  margin-top: 10px;
+}

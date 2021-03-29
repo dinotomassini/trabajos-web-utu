@@ -9,53 +9,100 @@
   <body>
     <!-- https://picsum.photos/200/300 -->
 
+    <h1>Comparativa de reproductores MP3</h1>
+
+    <p>Tabla comparativa de las caracteristicas de los reproductores MP3</p>
+
     <table border>
       <tr>
-        <td></td>
+        <th>
+          <!-- CELDA VACIA -->
+        </th>
+        <th colspan="3">
+          <img src="../imagenes/mp3_pequeno_blanco.png" alt="mp3 mini" />
+          <img src="../imagenes/mp3_pequeno_negro.png" alt="mp3 mini" />
+          <p>MP3 mini</p>
+        </th>
+        <th colspan="4">
+          <img src="../imagenes/mp3_grande_blanco.png" alt="mp3 mini" />
+          <img src="../imagenes/mp3_grande_negro.png" alt="mp3 mini" />
+          <p>MP3 grande</p>
+        </th>
+      </tr>
+
+      <tr>
+        <th>Capacidad de almacenamiento</th>
+
         <td>
-          <img src="./imagenes/mp3_pequeno_blanco.png" alt="mp3 mini" />
-          <img src="./imagenes/mp3_pequeno_negro.png" alt="mp3 mini" />
-          <p>MP3 Mini</p>
+          <strong>
+            4GB <br />
+            (1.000 canciones)
+          </strong>
         </td>
-        <td colspan="4">
-          <img src="./imagenes/mp3_grande_blanco.png" alt="mp3 mini" />
-          <img src="./imagenes/mp3_grande_negro.png" alt="mp3 mini" />
-          <p>MP3 Grande</p>
+        <td>
+          <strong>
+            8GB <br />
+            (2.000 canciones)
+          </strong>
+        </td>
+        <td>
+          <strong>
+            16GB <br />
+            (4.000 canciones)
+          </strong>
+        </td>
+
+        <td>
+          <strong>
+            30GB <br />
+            (7.500 canciones)
+          </strong>
+        </td>
+        <td>
+          <strong>
+            80GB <br />
+            (20.000 canciones)
+          </strong>
         </td>
       </tr>
 
       <tr>
-        <td>Capacidad de almacenamiento</td>
-
-        <td>4gb</td>
-        <td>8gb</td>
-        <td>1gb</td>
-
-        <td>30gb</td>
-        <td>80gb</td>
-      </tr>
-
-      <tr>
-        <td>Colores</td>
-        <td><img src="./imagenes/color_blanco.png" alt="color blanco" /></td>
+        <th>Colores</th>
+        <td><img src="../imagenes/color_blanco.png" alt="color blanco" /></td>
         <td>
-          <img src="./imagenes/color_azul.png" alt="color azul" />
-          <img src="./imagenes/color_rosa.png" alt="color rosa" />
-          <img src="./imagenes/color_verde.png" alt="color verde" />
-          <img src="./imagenes/color_negro.png" alt="color negro" />
+          <img src="../imagenes/color_negro.png" alt="color negro" />
+          <img src="../imagenes/color_verde.png" alt="color verde" />
+          <img src="../imagenes/color_azul.png" alt="color azul" />
+          <img src="../imagenes/color_rosa.png" alt="color rosa" />
         </td>
 
-        <td><img src="./imagenes/color_negro.png" alt="color negro" /></td>
+        <td><img src="../imagenes/color_negro.png" alt="color negro" /></td>
         <td colspan="2">
-          <img src="./imagenes/color_blanco.png" alt="color blanco" />
-          <img src="./imagenes/color_negro.png" alt="color negro" />
+          <img src="../imagenes/color_blanco.png" alt="color blanco" />
+          <img src="../imagenes/color_negro.png" alt="color negro" />
         </td>
       </tr>
 
       <tr>
-        <td>pantalla</td>
-        <td>lcd de 3 cm</td>
-        <td>lcd de 6 cm</td>
+        <th>Pantalla</th>
+        <td colspan="3">
+          <strong>LCD de 3 cm (diagonal) con retroiluminacion</strong>
+        </td>
+        <td colspan="2">
+          <strong>LCD de 6 cm(diagonal) con retroiluminacion</strong>
+        </td>
+      </tr>
+
+      <tr>
+        <th rowspan="2">Tiempo de carga</th>
+        <td colspan="3" rowspan="2"><strong>Unas 3 horas</strong></td>
+        <td colspan="2"><strong>Unas 4 horas</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <strong>Unas 2 horas para alcanzar el 80% de la capacidad</strong>
+        </td>
       </tr>
     </table>
   </body>
