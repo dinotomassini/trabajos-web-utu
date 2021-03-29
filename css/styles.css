@@ -1,10 +1,32 @@
+/*
+PALETAS DE COLORES
+
+PALETA 1
+#3B1E2E - violeta
+#875470 -violeta claro
+#878261 - crema oscuro
+#468187 - celeste apagado
+#21383B - azul gris
+
+PALETA 2
+#212428 - gris oscuro
+#456059 - gris claro
+#4C63C8 - violeta claro
+#687096 - gris mas claro
+#0F34DA - violeta un poco mas oscuro
+*/
+
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: #21383b;
+}
+
 nav, footer {
-  background-color: darkgrey;
+  background-color: #3b1e2e;
 }
 
 nav {
@@ -21,16 +43,27 @@ nav {
 }
 
 main {
+  margin: 10px;
   justify-content: center;
+}
+
+nav, h1, footer {
+  color: #bbb693
 }
 
 h1, .card-title, footer {
   text-align: center;
 }
 
+h1 {
+  margin: 15px;
+  padding: 10px;
+}
+
 .deck {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -38,9 +71,9 @@ h1, .card-title, footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 3px;
+  margin: 5px;
   padding: 7px;
-  background-color:slategrey;
+  background-color: #875470;
   border-radius: 5px;
   width: 16rem;
   height: 16rem;
@@ -51,9 +84,28 @@ h1, .card-title, footer {
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
+  background-color: #468187;
 }
 
 footer {
   margin-top: 10px;
+}
+
+.prueba-colores {
+  display: flex;
+  justify-content:space-evenly;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.paleta1 {
+  width: 50%;
+  border: 1px solid black;
+}
+
+.paleta2 {
+  width: 50%;
+  border: 1px solid black;
 }

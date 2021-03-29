@@ -1,3 +1,9 @@
 # Trabajos de Diseño Web
 
-Se iran agregando los trabajos de diseño web.
+Para acceder a la pagina (online) ir a:
+  * https://dino-tomassini-utu.netlify.app/
+
+
+En esta pagina se iran añadiendo los trabajos (frontend) de diseño web.
+
+Autor: Dino Tomassini
