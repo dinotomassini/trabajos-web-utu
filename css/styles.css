@@ -22,11 +22,11 @@ PALETA 2
 }
 
 body {
-  background-color: #21383b;
+  background-color: #687096;
 }
 
 nav, footer {
-  background-color: #3b1e2e;
+  background-color: #212428;
 }
 
 nav {
@@ -40,6 +40,7 @@ nav {
 
 .brand-name {
   text-decoration: none;
+  color: whitesmoke;
 }
 
 main {
@@ -60,6 +61,11 @@ h1 {
   padding: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .deck {
   display: flex;
   justify-content: center;
@@ -73,7 +79,7 @@ h1 {
   justify-content: center;
   margin: 5px;
   padding: 7px;
-  background-color: #875470;
+  background-color: #456059;
   border-radius: 5px;
   width: 16rem;
   height: 16rem;
@@ -85,11 +91,16 @@ h1 {
 
 .card:hover {
   transform: scale(1.04);
-  background-color: #468187;
+  background-color: #4C63C8;
+  border: 2px solid orange;
 }
 
 footer {
   margin-top: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .prueba-colores {
