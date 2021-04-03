@@ -2,18 +2,12 @@
 PALETAS DE COLORES
 
 PALETA 1
-#3B1E2E - violeta
-#875470 -violeta claro
-#878261 - crema oscuro
-#468187 - celeste apagado
-#21383B - azul gris
+#3b93f7
+#69478a
+#7b84ba
+#b1b6fb
+#db4d29
 
-PALETA 2
-#212428 - gris oscuro
-#456059 - gris claro
-#4C63C8 - violeta claro
-#687096 - gris mas claro
-#0F34DA - violeta un poco mas oscuro
 */
 
 * {
@@ -22,11 +16,11 @@ PALETA 2
 }
 
 body {
-  background-color: #687096;
+  background-color: #7b84ba;
 }
 
 nav, footer {
-  background-color: #212428;
+  background-color: #db4d29;
 }
 
 nav {
@@ -48,17 +42,22 @@ main {
   justify-content: center;
 }
 
-nav, h1, footer {
-  color: #bbb693
-}
-
-h1, .card-title, footer {
-  text-align: center;
+nav, footer {
+  color: #bbb693 
 }
 
 h1 {
+  color: #69478a;
+  
+  font-size: 3em;
   margin: 15px;
   padding: 10px;
+}
+
+
+
+h1, .card-title, footer {
+  text-align: center;
 }
 
 a {
@@ -74,25 +73,39 @@ a {
 
 .card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 5px;
   padding: 7px;
-  background-color: #456059;
+  background-color: #b1b6fb;
   border-radius: 5px;
   width: 16rem;
   height: 16rem;
 }
 
+.card > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .card-title {
   margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.card-description {
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 5px;
+  text-align: center;
 }
 
 .card:hover {
   transform: scale(1.04);
-  background-color: #4C63C8;
-  border: 2px solid orange;
+  background-color: #69478a;
+  border: 2px solid #db4d29;
 }
 
 footer {
@@ -111,12 +124,7 @@ footer {
   padding: 10px;
 }
 
-.paleta1 {
+/* .paleta1 {
   width: 50%;
   border: 1px solid black;
-}
-
-.paleta2 {
-  width: 50%;
-  border: 1px solid black;
-}
+} */

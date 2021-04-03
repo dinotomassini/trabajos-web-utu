@@ -4,6 +4,6 @@ Para acceder a la pagina (online) ir a:
   * https://dino-tomassini-utu.netlify.app/
 
 
-En esta pagina se iran añadiendo los trabajos (frontend) de diseño web.
+En esta pagina se iran añadiendo los trabajos de diseño web, estos trabajos estan dentro del diretorio ./pages
 
 Autor: Dino Tomassini
