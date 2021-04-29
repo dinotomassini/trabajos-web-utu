@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4, footer {
+  text-align: center;
+}
+
+ul p {
+  display: inline;
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+.color {
+  width: 20px;
+  display: inline-block;
+}
+
+.imagen {
+  width: 80%;
+  margin: auto;
+}
+
+.imagen img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
