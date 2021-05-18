@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- completar el head con los meta y hacer una planilla -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Repaso de los trabajos">
+  <meta name="keywords" content="repaso web diseño videos enlaces">
+  <meta name="author" content="Dino Tomassini">
+  <!-- <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> -->
+  <link rel="stylesheet" href="../css/style_trabajo5.css">
+  <title>Repaso 2</title>
+</head>
+<body>
+  <main id="contenedor">
+    <h1>Uso del color</h1>
+    <p>La propiedad color establece el color del texto, mientras que la propiedad background-color establece el color de fondo del elemento.</p>
+    <img src="../imagenes/color.PNG" alt="tabla de conformacion de colores" width="100%">
+    <h2>Editores de color</h2>
+    <ul>
+      <li>ColorPicker</li>
+      <li>ColorZilla</li>
+      <li>HailPixel</li>
+      <li>ColorSpire</li>
+    </ul>
+
+    <section>
+
+      <article>
+        
+        <div class="modelo-1">
+          <h2><span>Palabras clave</span> -red, yelolow,lightpink</h2>
+          <p>
+            Permite establecer el color utilizando palabras reservadas de colores, como red, blue, orange, white, navy, yellow u otras. Existen más de 140 palabras clave para indicar colores
+          </p>
+          
+          <h2><span>RGB</span> -red, green, blue(</h2>
+          <p>
+            Las siglas RGB significan rojo, verde y azul, por lo que cada cifra (del 0 al 255) representa la intensidad de cada componente de color. Como se puede ver en la siguiente imagen, si utilizamos una cantidad (0, 0, 0) de cada canal, obtenemos el color negro. En cambio, si utilizamos una cantidad (255, 0, 0), obtendremos el color rojo.
+          </p>
+        </div>
+        
+        <div class="modelo-2">
+          <h2><span>HEXADECIMAL</span> # 440066</h2>
+          <p>
+            utilizado por los desarrolladores web, aunque en principio puede parecer algo extraño y complicado, sobre todo si no has oído hablar nunca del sistema hexadecimal (sistema en base 16 en lugar del que utilizamos normalmente, en base 10).
+            Cada par de letras simboliza el valor del RGB en el sistema de numeración hexadecimal, así pues, el color #FF0000, o sea HEX(FF,00,00), es equivalente al RGB(255,0,0), que es también equivalente al HSL(0, 100%, 100%). Veamos algunos ejemplos para clarificarlo:
+            <br>
+            <em><strong>Truco</strong>: Como se puede ver en la segunda columna, para ahorrar espacio puedes utilizar el formato hexadecimal abreviado, especificando sólo las primeras tres cifras de cada par. Por ejemplo, #9933AA como #93A. El color abreviado sólo será fiel cuando los pares de cifras sean idénticos (o al menos, aproximados).</em>
+          </P>
+          <h2><span>HSL</span> % </h2>
+          <p>
+            Las siglas HSL significan color (o matiz), saturación y brillo. La primera cifra selecciona el matiz de color (una cifra de 0 a 360 grados), seleccionando el color del círculo exterior de la imagen. Por su parte, las dos siguientes, son el porcentaje de saturación y el brillo del color, respectivamente (ambos, porcentajes de 0% a 100%).
+          </P>
+        </div>
+
+      </article>
+
+      <article>
+        <div class="modelo-3">
+          <h2>Canales Alfa</h2>
+          <p>
+            transparencia, y de esta forma, refleje el contenido, color o imágenes que se encuentren detrás. Hasta ahora solo conocemos la palabra clave transparent, que es un color de transparencia total (totalmente transparente).
+            Sin embargo, existe la posibilidad de utilizar los denominados canales alfa, que permiten establecer una transparencia parcial en determinados colores. Estos se pueden establecer en cualquier formato, salvo en los colores con palabras clave. Vamos a ver como hacerlo en cada caso:
+          </p>
+          <p>
+            <em>
+             Formato RGB: En lugar de rgb() indicamos rgba() para establecer que usaremos un canal alfa. Posteriormente, en lugar de establecer 3 parámetros (rojo, verde, azul), añadiremos uno más, que será el canal alfa. Dicho canal alfa será un valor (del 0 al 1 con decimales) o un porcentaje (del 0% al 100%).
+             Formato HSL: Prácticamente idéntico al anterior. En lugar de hsl() indicamos hsla(). Añadimos un nuevo valor como canal alfa (valor o porcentaje).
+             Formato Hexadecimal: Es posible indicar (al final) un par adicional que indique el grado de transparencia. Por ejemplo, el color #FF0000 reescrito como #FF000077 se trataría de dicho color, con un grado de transparencia casi del 50% (00 es 0%, 80 es 50%, FF es 100%).
+            <em>
+          </p>
+        </div>
+
+      </article>
+
+    </section>
+
+  <main>
+  
+  <footer class="section"> 
+    fuentes:https://www.w3schools.com/, https://developer.mozilla.org/, https://lenguajecss.com/
+  </footer>
+
+
+</body>
+</html>

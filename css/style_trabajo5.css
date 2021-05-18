@@ -1,0 +1,51 @@
+
+#contenedor {
+  width: 80%;
+  height: auto;
+  background-color: bisque;
+  margin: 5px;
+  padding: 5px;
+  border: .5px dotted blue;
+}
+
+h1, h2 {
+  text-shadow: 2px 2px skyblue;
+  text-align: center;
+}
+
+span {
+  color: violet;
+}
+
+.section {
+  background-color: rgba(0,0,255,.3);
+}
+
+article {
+  border-bottom: 1.5px solid black;
+  border-right: 2px solid pink
+}
+
+.modelo-1 {
+  background-color: rgba(72, 72, 107, 0.699);
+  border: 2px solid tomato;
+  transform: rotate(2deg);
+}
+
+.modelo-2 {
+  background-color: rgba(51, 106, 168, 0.637);
+  border: 2px dotted tomato;
+  transform: rotate(-1deg);
+}
+
+.modelo-3 {
+  background-color: rgba(154, 88, 184, 0.568);
+  border: 2px dashed tomato;
+  transform: rotate(1.5deg);
+}
+
+img {
+  width: 70%;
+  display: block;
+  margin: auto;  
+}
