@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- completar el head con los meta y hacer una planilla -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Repaso de los trabajos">
+  <meta name="keywords" content="repaso web diseño videos enlaces">
+  <meta name="author" content="Dino Tomassini">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>Formulario Registro Persona</title>
+</head>
+<body>
+        
+   <main class="container">
+    <h1 class="text-center">Formulario de ingreso</h1>
+      <form action="#" method="post" class="container p-4 m-3">
+
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" placeholder="Ingrese su nombre" class="form-control" autofocus required>
+      </div>
+      
+
+      <div class="form-group">
+        <label for="mail">Email:</label>
+        <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" autofocus required>
+        <!-- En este input de tipo email, es valido ingresar algo@algo , no es necesario agregar el .algo , esto habria que verlo con JS -->
+      </div>
+
+      <div class="form-group">
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" id="pass" minlength="6" placeholder="Ingrese su contraseña" class="form-control" required>
+        <small id="passHelp" class="form-text text-muted">Mínimo 6 caracteres.</small>
+      </div>
+
+        <div class="form-group">
+          <label for="repass">Confirme su contraseña:</label>
+          <input type="password" name="repass" minlength="6" id="repass" placeholder="Ingrese nuevamente su contraseña" class="form-control" required>
+        </div>
+      
+
+      <div class="row">
+        
+        <div class="col">
+          <div class="form-group">
+            <label for="celular">Celular:</label>
+            <input type="text" name="celular" id="celular" placeholder="Ingrese su celular" pattern="/^([0-9])*$/" class="form-control">
+            <small id="celularHelp" class="form-text text-muted">Solo se aceptan números.</small>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label for="cedula">Cedula:</label>
+            <input type="text" name="cedula" id="cedula" minlength="7" maxlength="8" pattern="/^([0-9])*$/" placeholder="Ingrese su cedula (12345678)" class="form-control">
+            <small id="cedulaHelp" class="form-text text-muted">Solo se aceptan números.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="departamento">Departamento:</label>
+        <select name="departamento" id="departamento" class="form-control">
+          <option value="artigas">Artigas</option>
+          <option value="canelones">Canelones</option>
+          <option value="cerroLargo">Cerro Largo</option>
+          <option value="colonia">Colonia</option>
+          <option value="durazno">Durazno</option>
+          <option value="flores">Flores</option>
+          <option value="florida">Florida</option>
+          <option value="lavalleja">Lavalleja</option>
+          <option value="maldonado">Maldonado</option>
+          <option value="montevideo">Montevideo</option>
+          <option value="paysandu">Paysandú</option>
+          <option value="rioNegro">Río Negro</option>
+          <option value="rivera">Rivera</option>
+          <option value="rocha">Rocha</option>
+          <option value="salto">Salto</option>
+          <option value="sanJose">San José</option>
+          <option value="soriano">Soriano</option>
+          <option value="tacuarembo">Tacuarembó</option>
+          <option value="treintaYtres">Treinta y Tres</option>
+        </select>
+      </div>     
+
+      <div class="form-group">
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion" class="form-control">
+      </div>
+      
+      <div class="form-group d-flex justify-content-center">
+        <button type="submit" id="btnSubmitSignupPerson" class="btn btn-primary w-50 mt-3">Registrarse</button>
+      </div>
+
+    </form>
+  </main> 
+ 
+  <footer class="container-fluid bg-dark p-2 d-felx"> 
+    <p class="text-muted text-center align">
+      Dino Tomassini - 2021
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script>
+
+    document.getElementById("btnSubmitSignupPerson").addEventListener('submit', () => {
+      alert("Excelente se registro como persona.");
+    });
+
+  </script>
+</body>
+</html>

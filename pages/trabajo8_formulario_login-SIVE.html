@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- completar el head con los meta y hacer una planilla -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Repaso de los trabajos">
+  <meta name="keywords" content="repaso web diseño videos enlaces">
+  <meta name="author" content="Dino Tomassini">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>Formulario de ingreso</title>
+  <style>
+    .borde-izq {
+      border-left: 2px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="text-center">Formulario de ingreso</h1>
+    <div class="row mt-5 mb-5">
+
+      <div class="col-5 align-self-center">
+        <img src="../imagenes/logo_bitandbit.jpeg" alt="IMAGEN">
+        <h2 class="text-center text-muted">bit&bit</h2>
+      </div>
+
+      <!-- <div class="col-2">
+        <hr class="bg-dark" width="1" size="500">
+      </div> -->
+
+      <div class="col-7 borde-izq">
+        <form action="#" method="post" class="container p-4 m-3">
+          <div class="form-group">
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" autofocus required>
+          <!-- En este input de tipo email, es valido ingresar algo@algo , no es necesario agregar el .algo , esto habria que verlo con JS -->
+          </div>
+
+          <div class="form-group">
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="pass" id="pass" minlength="6" placeholder="Ingrese su contraseña" class="form-control" required>
+          </div>
+          
+          <div class="form-group d-flex justify-content-center">
+            <button type="submit" id="btnSubmitLogin" class="btn btn-primary w-50 mt-3">Ingresar</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  
+  </main> 
+
+
+ <footer class="container-fluid bg-dark p-2 d-felx"> 
+    <p class="text-muted text-center align">Dino Tomassini - 2021</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script>
+
+    document.getElementById("btnSubmitLogin").addEventListener('submit', () => {
+      alert("Excelente se logueo.");
+    });
+
+  </script>
+</body>
+</html>
