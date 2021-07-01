@@ -15,90 +15,85 @@
 <body>
         
    <main class="container">
-    <h1 class="text-center">Formulario de ingreso</h1>
-      <form action="#" method="post" class="container p-4 m-3">
-
-      <div class="form-group">
-        <label for="name">Nombre:</label>
-        <input type="text" name="name" id="name" placeholder="Ingrese su nombre" class="form-control" autofocus required>
-      </div>
-      
-
-      <div class="form-group">
-        <label for="mail">Email:</label>
-        <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" autofocus required>
-        <!-- En este input de tipo email, es valido ingresar algo@algo , no es necesario agregar el .algo , esto habria que verlo con JS -->
-      </div>
-
-      <div class="form-group">
-        <label for="pass">Contraseña:</label>
-        <input type="password" name="pass" id="pass" minlength="6" placeholder="Ingrese su contraseña" class="form-control" required>
-        <small id="passHelp" class="form-text text-muted">Mínimo 6 caracteres.</small>
-      </div>
-
+    <h1 class="text-center mb-3">Formulario de ingreso</h1>
+      <div class="card mx-auto" style="max-width: 42rem;">
+        <form id="signupForm" action="#" method="post" class="container p-4 m-3">
         <div class="form-group">
-          <label for="repass">Confirme su contraseña:</label>
-          <input type="password" name="repass" minlength="6" id="repass" placeholder="Ingrese nuevamente su contraseña" class="form-control" required>
+          <label for="name">Nombre:</label>
+          <input type="text" name="name" id="name" placeholder="Ingrese su nombre" class="form-control" autofocus required>
         </div>
-      
-
-      <div class="row">
         
-        <div class="col">
+        <div class="form-group">
+          <label for="mail">Email:</label>
+          <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" autofocus required>
+          <!-- En este input de tipo email, es valido ingresar algo@algo , no es necesario agregar el .algo , esto habria que verlo con JS -->
+        </div>
+        <div class="form-group">
+          <label for="pass">Contraseña:</label>
+          <input type="password" name="pass" id="pass" minlength="6" placeholder="Ingrese su contraseña" class="form-control" required>
+          <small id="passHelp" class="form-text text-muted">Mínimo 6 caracteres.</small>
+        </div>
           <div class="form-group">
-            <label for="celular">Celular:</label>
-            <input type="text" name="celular" id="celular" placeholder="Ingrese su celular" pattern="/^([0-9])*$/" class="form-control">
-            <small id="celularHelp" class="form-text text-muted">Solo se aceptan números.</small>
+            <label for="repass">Confirme su contraseña:</label>
+            <input type="password" name="repass" minlength="6" id="repass" placeholder="Ingrese nuevamente su contraseña" class="form-control" required>
+          </div>
+        
+        <div class="row">
+        
+          <div class="col">
+            <div class="form-group">
+              <label for="celular">Celular:</label>
+              <!-- pattern="/^([0-9])*$/" -->
+              <input type="text" name="celular" id="celular" placeholder="Ingrese su celular" class="form-control">
+              <small id="celularHelp" class="form-text text-muted">Solo se aceptan números.</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="cedula">Cedula:</label>
+              <!-- pattern="/^([0-9])*$/" -->
+              <input type="text" name="cedula" id="cedula" minlength="7" maxlength="8"  placeholder="Ingrese su cedula (12345678)" class="form-control">
+              <small id="cedulaHelp" class="form-text text-muted">Solo se aceptan números.</small>
+            </div>
           </div>
         </div>
-
-        <div class="col">
-          <div class="form-group">
-            <label for="cedula">Cedula:</label>
-            <input type="text" name="cedula" id="cedula" minlength="7" maxlength="8" pattern="/^([0-9])*$/" placeholder="Ingrese su cedula (12345678)" class="form-control">
-            <small id="cedulaHelp" class="form-text text-muted">Solo se aceptan números.</small>
-          </div>
+        <div class="form-group">
+          <label for="departamento">Departamento:</label>
+          <select name="departamento" id="departamento" class="form-control">
+            <option value="artigas">Artigas</option>
+            <option value="canelones">Canelones</option>
+            <option value="cerroLargo">Cerro Largo</option>
+            <option value="colonia">Colonia</option>
+            <option value="durazno">Durazno</option>
+            <option value="flores">Flores</option>
+            <option value="florida">Florida</option>
+            <option value="lavalleja">Lavalleja</option>
+            <option value="maldonado">Maldonado</option>
+            <option value="montevideo">Montevideo</option>
+            <option value="paysandu">Paysandú</option>
+            <option value="rioNegro">Río Negro</option>
+            <option value="rivera">Rivera</option>
+            <option value="rocha">Rocha</option>
+            <option value="salto">Salto</option>
+            <option value="sanJose">San José</option>
+            <option value="soriano">Soriano</option>
+            <option value="tacuarembo">Tacuarembó</option>
+            <option value="treintaYtres">Treinta y Tres</option>
+          </select>
         </div>
+        <div class="form-group">
+          <label for="direccion">Dirección:</label>
+          <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion" class="form-control">
+        </div>
+        
+        <div class="form-group d-flex justify-content-center">
+          <button type="submit" id="btnSubmitSignupPerson" class="btn btn-primary w-50 mt-3">Registrarse</button>
+        </div>
+        </form>
       </div>
-
-      <div class="form-group">
-        <label for="departamento">Departamento:</label>
-        <select name="departamento" id="departamento" class="form-control">
-          <option value="artigas">Artigas</option>
-          <option value="canelones">Canelones</option>
-          <option value="cerroLargo">Cerro Largo</option>
-          <option value="colonia">Colonia</option>
-          <option value="durazno">Durazno</option>
-          <option value="flores">Flores</option>
-          <option value="florida">Florida</option>
-          <option value="lavalleja">Lavalleja</option>
-          <option value="maldonado">Maldonado</option>
-          <option value="montevideo">Montevideo</option>
-          <option value="paysandu">Paysandú</option>
-          <option value="rioNegro">Río Negro</option>
-          <option value="rivera">Rivera</option>
-          <option value="rocha">Rocha</option>
-          <option value="salto">Salto</option>
-          <option value="sanJose">San José</option>
-          <option value="soriano">Soriano</option>
-          <option value="tacuarembo">Tacuarembó</option>
-          <option value="treintaYtres">Treinta y Tres</option>
-        </select>
-      </div>     
-
-      <div class="form-group">
-        <label for="direccion">Dirección:</label>
-        <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion" class="form-control">
-      </div>
-      
-      <div class="form-group d-flex justify-content-center">
-        <button type="submit" id="btnSubmitSignupPerson" class="btn btn-primary w-50 mt-3">Registrarse</button>
-      </div>
-
-    </form>
   </main> 
  
-  <footer class="container-fluid bg-dark p-2 d-felx"> 
+  <footer class="container-fluid bg-dark p-2 d-felx mt-4 mb-3"> 
     <p class="text-muted text-center align">
       Dino Tomassini - 2021
     </p>
@@ -109,9 +104,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   <script>
 
-    document.getElementById("btnSubmitSignupPerson").addEventListener('submit', () => {
-      alert("Excelente se registro como persona.");
+    document.querySelector('#signupForm').addEventListener('submit', (evt) => {
+      evt.preventDefault();
+      alert("Felicitaciones, ya se registró como persona.");
+      limpiarForm();
     });
+
+    function limpiarForm() {
+      document.querySelector('#name').value = '';
+      document.querySelector('#mail').value = '';
+      document.querySelector('#cedula').value = '';
+      document.querySelector('#pass').value = '';
+      document.querySelector('#repass').value = '';
+      document.querySelector('#departamento').value = 'artigas';
+      document.querySelector('#celular').value = '';
+      document.querySelector('#direccion').value = '';
+    }
+
+
 
   </script>
 </body>

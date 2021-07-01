@@ -19,43 +19,41 @@
 </head>
 <body>
   <main class="container">
-    <h1 class="text-center">Formulario de ingreso</h1>
-    <div class="row mt-5 mb-5">
+    <h1 class="text-center mb-3">Formulario de ingreso</h1>
 
-      <div class="col-5 align-self-center">
-        <img src="../imagenes/logo_bitandbit.jpeg" alt="IMAGEN">
-        <h2 class="text-center text-muted">bit&bit</h2>
-      </div>
-
-      <!-- <div class="col-2">
-        <hr class="bg-dark" width="1" size="500">
-      </div> -->
-
-      <div class="col-7 borde-izq">
-        <form action="#" method="post" class="container p-4 m-3">
-          <div class="form-group">
-            <label for="mail">Email:</label>
-            <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" autofocus required>
-          <!-- En este input de tipo email, es valido ingresar algo@algo , no es necesario agregar el .algo , esto habria que verlo con JS -->
-          </div>
-
-          <div class="form-group">
-            <label for="pass">Contraseña:</label>
-            <input type="password" name="pass" id="pass" minlength="6" placeholder="Ingrese su contraseña" class="form-control" required>
-          </div>
-          
-          <div class="form-group d-flex justify-content-center">
-            <button type="submit" id="btnSubmitLogin" class="btn btn-primary w-50 mt-3">Ingresar</button>
-          </div>
-        </form>
-      </div>
+    <div class="card mx-auto" style="max-width: 48rem;">
+    
+      <div class="row m-5">
+    
+        <div class="col-5 align-self-center p-5">
+          <img src="../imagenes/logo_bitandbit.jpeg" alt="IMAGEN" class="d-block mx-auto">
+          <h2 class="text-center text-muted">bit&bit</h2>
+        </div>
+    
+        <div class="col-7 borde-izq">
+          <form id="loginForm" action="#" method="post" class="container p-4 m-3">
+            <div class="form-group">
+              <label for="mail">Email:</label>
+              <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" autofocus required>
+            <!-- En este input de tipo email, es valido ingresar algo@algo , no es necesario agregar el .algo , esto habria que verlo con JS -->
+            </div>
+            <div class="form-group">
+              <label for="pass">Contraseña:</label>
+              <input type="password" name="pass" id="pass" minlength="6" placeholder="Ingrese su contraseña" class="form-control" required>
+            </div>
+            <div class="form-group d-flex justify-content-center">
+              <button type="submit" id="btnSubmitLogin" class="btn btn-primary w-50 mt-3">Ingresar</button>
+            </div>
+          </form>
+        </div>
       
+      </div>
     </div>
   
   </main> 
 
 
- <footer class="container-fluid bg-dark p-2 d-felx"> 
+ <footer class="container-fluid bg-dark p-2 d-felx mt-4"> 
     <p class="text-muted text-center align">Dino Tomassini - 2021</p>
   </footer>
 
@@ -64,9 +62,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   <script>
 
-    document.getElementById("btnSubmitLogin").addEventListener('submit', () => {
-      alert("Excelente se logueo.");
+   document.querySelector('#loginForm').addEventListener('submit', (evt) => {
+      evt.preventDefault();
+      alert("Excelente, logueado con éxito.");
+      limpiarForm();
     });
+
+    function limpiarForm() {
+      document.querySelector('#mail').value = '';
+      document.querySelector('#pass').value = '';
+    }
+
 
   </script>
 </body>
